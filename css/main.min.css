@@ -792,10 +792,6 @@ img {
   .about__text {
     font-size: 15px;
   }
-
-  .directions-card {
-    max-width: 200px;
-  }
 }
 .break-text {
   white-space: nowrap; /* Забезпечує, що текст не переноситься по рядках */
