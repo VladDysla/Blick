@@ -1,0 +1,66 @@
+.teachers-title {
+   text-align: center;
+   font-size: 40px;
+   font-weight: 700;
+   padding-top: 100px;
+   padding-bottom: 100px;
+ }
+ .teachers-list {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   -ms-flex-pack: distribute;
+   justify-content: space-around;
+   list-style: none;
+   padding: 0;
+   gap: 10px;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ 
+ 
+ 
+ .list-item {
+   width: 330px;
+   margin-bottom: 20px;
+   padding: 0 10px;
+ }
+ .teachers-card {
+   border-radius: 15px;
+   overflow: hidden;
+   text-align: center;
+   background-color: var(--dark-text);
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); /* Более размытная тень */
+ }
+ .teachers-img {
+   width: 100%;
+   height: 45vh;
+   border-radius: 4px 4px 4px 200px;
+ 
+ }
+ .text-item {
+   height: 90px;
+   padding: 0 5px;
+ }
+ .name {
+   font-size: 18px;
+   font-weight: 700;
+   color: var(--main-color);
+   margin-top: 10px;
+   margin-bottom: 0;
+ }
+ .instrument {
+   font-style: italic;
+   font-size: 12px;
+   font-weight: 600;
+   color: var(--main-color);
+   padding: 0;
+ }
+ .slogan {
+   font-size: 12px;
+   font-weight: 600;
+   color: var(--light-blue);
+   margin-top: 20px;
+ }

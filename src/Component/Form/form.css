@@ -1,0 +1,143 @@
+.forms-title {
+   text-align: center;
+   font-size: 40px;
+   font-weight: 700;
+   padding-top: 100px;
+ }
+ .forms__container {
+   margin: 0 auto;
+   margin-bottom: 150px;
+   position: relative;
+   max-width: 740px;
+   height: 540px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+ }
+ .forms__form {
+   position: absolute;
+   width: 540px;
+   height: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   gap: 27px;
+ }
+ .forms__form-input input {
+   background: rgba(0, 0, 0, 0);
+   width: 100%;
+   /* border-color: #00bfc3;  */
+   padding: 15px 20px;
+   border: 2px solid #00bfc3;
+   border-radius: 20px;
+   font-size: 18px;
+   color: #08273c;
+   outline: none;
+   transition: border-color 0.3s ease; 
+ }
+ 
+ .forms__form-input input:focus {
+   border-color: #00bfc3; 
+ }
+ .forms__form-submit button {
+   background: linear-gradient(30deg, #08273c, #00bfc3);
+   width: 100%;
+   padding: 15px 20px;
+   border: none;
+   border-radius: 40px;
+   font-size: 18px;
+   color: #fff;
+   cursor: pointer;
+ }
+ .forms__container i {
+   position: absolute;
+   inset: 0;
+   border: 2px solid #08273c;
+   -webkit-transition: 0.5s;
+   transition: 0.5s;
+ }
+ .forms__container i:nth-child(1) {
+   border-radius: 38% 62% 63% 32%/41% 44% 56% 59%;
+   -webkit-animation: anime_1 6s linear infinite;
+   animation: anime_1 6s linear infinite;
+ }
+ .forms__container i:nth-child(2) {
+   border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+   -webkit-animation: anime_1 4s linear infinite;
+   animation: anime_1 4s linear infinite;
+ }
+ .forms__container i:nth-child(3) {
+   border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+   -webkit-animation: anime_2 10s linear infinite;
+   animation: anime_2 10s linear infinite;
+ }
+ .forms__container:hover i {
+   border: 6px solid var(--color);
+   -webkit-filter: drop-shadow(0 0 20px var(--color));
+   filter: drop-shadow(0 0 20px var(--color));
+ }
+ @-webkit-keyframes anime_1 {
+   0% {
+     -webkit-transform: rotate(0deg);
+     transform: rotate(0deg);
+   }
+   100% {
+     -webkit-transform: rotate(360deg);
+     transform: rotate(360deg);
+   }
+ }
+ @keyframes anime_1 {
+   0% {
+     -webkit-transform: rotate(0deg);
+     transform: rotate(0deg);
+   }
+   100% {
+     -webkit-transform: rotate(360deg);
+     transform: rotate(360deg);
+   }
+ }
+ @-webkit-keyframes anime_2 {
+   0% {
+     -webkit-transform: rotate(360deg);
+     transform: rotate(360deg);
+   }
+   100% {
+     -webkit-transform: rotate(0deg);
+     transform: rotate(0deg);
+   }
+ }
+ @keyframes anime_2 {
+   0% {
+     -webkit-transform: rotate(360deg);
+     transform: rotate(360deg);
+   }
+   100% {
+     -webkit-transform: rotate(0deg);
+     transform: rotate(0deg);
+   }
+ }
+
+ @media screen and (max-width: 800px) {
+  .forms__form {
+    width: 400px;
+  }
+ }
+
+ @media screen and (max-width: 550px) {
+  .forms__form {
+    width: 300px;
+  }
+ }

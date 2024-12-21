@@ -1,0 +1,37 @@
+.grey {
+width: 200px;
+height: 100px;
+background-color: gray;
+}
+.blue {
+   width: 200px;
+   height: 100px;
+background-color: rgb(53, 93, 167);
+
+}
+.green {
+   width: 200px;
+   height: 100px;
+background-color: rgb(175, 32, 32);
+
+}
+
+.red {
+   width: 200px;
+   height: 100px;
+background-color: rgb(51, 29, 29);
+
+}
+.yellow {
+   width: 200px;
+   height: 100px;
+background-color: rgb(62, 161, 87);
+
+}
+
+@media screen and (max-width: 621px) {
+   .blue {
+      margin-left: 80px;
+      margin-right: 90px;
+   }
+ }
